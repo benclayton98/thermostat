@@ -28,11 +28,22 @@ class Thermostat{
     }
 
     psmOff(){
-        return this._powerSavingMode = false;
+        this._powerSavingMode = false;
+
+        return 'power saving mode Off'
     }
 
     psmOn(){
-        return this._powerSavingMode = true;
+        
+        
+        if(this._temperature >25){
+            
+            this._temperature = 25
+            this._powerSavingMode = true;
+        }else {
+            this._powerSavingMode = true;
+        }
+        return 'power saving mode On'
     }
 
     reset(){
@@ -49,7 +60,15 @@ class Thermostat{
         else 
         return 'high usage'
     }
-
+    set25(){
+        if(this._temperature >25){
+        this._temperature = 25
+    }
+    else
+    {
+        this._temperature = this._temperature
+    }return this._temperature
 }
 
-module.exports = Thermostat;
+
+}

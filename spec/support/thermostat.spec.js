@@ -1,4 +1,4 @@
-const Thermostat = require('./../../src/thermostat.js');
+
 
 
 let thermostat;

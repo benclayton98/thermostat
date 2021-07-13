@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <style>
+        .buttonUp {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      
+        .buttonDown {
+          background-color: #FF0000;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .buttonTitle {
+          background-color: #000000;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+       
+        </style>
+        
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <marquee id="welcome" class= "buttonTitle">Thermostat</marquee>
+        <button type="button" id="buttonUp" class = "buttonUp">TempUp</button>
+        <button type="button" id="buttonDown" class = "buttonDown">TempDown</button>
+        <button type="button" id="buttonOn" class = "buttonUp">Save the planet</button>
+        <button type="button" id="buttonOff" class = "buttonDown">Fuck the planet</button>
+                
+        <span id="messageOff"></span>
+        <span id="message"></span>
+      
+        <script src="src/thermostat.js"></script>
+    <script src="interface.js"></script>
+   </body>
+    
+</html>
