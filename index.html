@@ -43,18 +43,32 @@
         
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title></title>
   </head>
   <body>
       <marquee id="welcome" class= "buttonTitle">Thermostat</marquee>
         <button type="button" id="buttonUp" class = "buttonUp">TempUp</button>
         <button type="button" id="buttonDown" class = "buttonDown">TempDown</button>
-        <button type="button" id="buttonOn" class = "buttonUp">Save the planet</button>
-        <button type="button" id="buttonOff" class = "buttonDown">Fuck the planet</button>
+        <button type="button" id="buttonOn" class = "buttonUp">Power Saving Mode on</button>
+        <button type="button" id="buttonOff" class = "buttonDown">Power Saving Mode off</button>
+        <button type="button" id="buttonEnergy" class = "buttonTitle">Check Energy Usage</button>
+        <button type="button" id="buttonReset" class = "buttonTitle">Reset</button>
                 
         <span id="messageOff"></span>
         <span id="message"></span>
-      
+        <span id="energyUsage"></span>
+        <br>
+        <br>
+        <br>
+        <span id="weatherMessage">Current Temp in London:</span>
+        <span id="londonWeather"></span>
+        <br>
+        <button type="button" id="londonButton">London Weather</button>
+        <button type="button" id="manchesterButton">Manchester Weather</button>
+        <button type="button" id="birminghamButton">Birmingham Weather</button>
+        
+        
         <script src="src/thermostat.js"></script>
     <script src="interface.js"></script>
    </body>

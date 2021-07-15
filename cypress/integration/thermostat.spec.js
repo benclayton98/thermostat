@@ -27,4 +27,15 @@ describe('Thermostat home page', () =>{
         cy.get('#buttonOn').click()
         cy.get('#messageOff').should('contain','power saving mode On')
     })
+    it("show energy usage as medium usage if between 18 and 25", () =>{
+        cy.visit('/')
+        cy.get('#buttonEnergy').click()
+        cy.get('#energyUsage').should('contain','medium usage')
+    })
+
+    it("resets temperature to 20", function(){
+        cy.visit('/')
+        cy.get('#buttonReset').click()
+        cy.get('#message').should('contain','20')
+    })
 })
